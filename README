@@ -1,0 +1,3 @@
+### Advent of Code 2022
+
+From `src`, where x is the day, compile with `rustc` and then run with `./day_x`.
