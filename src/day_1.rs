@@ -50,18 +50,14 @@ fn main() {
 
     let mut curr = 0;
     let mut winners = Winners::new();
-    let mut all = Vec::<u32>::new();
     for line in lines {
         if line == "" {
-            all.push(curr);
             winners.insert(curr);
             curr = 0;
         } else {
             curr += line.parse::<u32>().unwrap();
         }
     }
-
-    println!("{:?}", all.sort());
 
     println!("1st place: {}", winners.first);
     println!("2st place: {}", winners.second);
